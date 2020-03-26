@@ -7,12 +7,17 @@ var rl = readline.createInterface({
 });
 
 var  getInputInt= function () {
-    rl.question('正の整数値：', function (answer) {
+    rl.question('整数値：', function (answer) {
         var input_int = parseInt(answer);
+        var count = 0;
         if ( input_int > 0 ) {
             for (var i = 0; i <= input_int; i++ ) {
-                log(i);
+                if (input_int % i == 0){
+                    process.stdout.write(i + ' ');
+                    count++;
+                }
             }
+            log('\n約数は' + count +'個です。');
             rl.close();
         } else {
             getInputInt();
@@ -21,5 +26,4 @@ var  getInputInt= function () {
     });
 };
 
-console.log('カウントアップします。');
 getInputInt();

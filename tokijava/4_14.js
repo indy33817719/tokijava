@@ -7,12 +7,14 @@ var rl = readline.createInterface({
 });
 
 var  getInputInt= function () {
-    rl.question('正の整数値：', function (answer) {
+    rl.question('nの値：', function (answer) {
         var input_int = parseInt(answer);
+        var sum = 0;
         if ( input_int > 0 ) {
             for (var i = 0; i <= input_int; i++ ) {
-                log(i);
+                sum += i;
             }
+            console.log('1から' + input_int + 'までの和は' + sum + 'です。');
             rl.close();
         } else {
             getInputInt();
@@ -21,5 +23,5 @@ var  getInputInt= function () {
     });
 };
 
-console.log('カウントアップします。');
+console.log('1からnまでの和を求めます。');
 getInputInt();
