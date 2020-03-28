@@ -22,7 +22,7 @@ var checkInt = function () {
 };
 
 var checkIntAgain = function () {
-    rl.question('もう一度？ Yes...1/No...0', function (answer) {
+    rl.question('もう一度？ Yes...1/No...0\n', function (answer) {
         var input_int = answer;
         if (input_int == 0)
         {return rl.close();}
