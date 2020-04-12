@@ -56,3 +56,13 @@
 //     c[z] = new Array(4);
 // }
 // console.log(c);
+
+const reverseInt = (str) => {
+    return str.split("").reverse().join("");
+}
+
+let x = 890;
+
+console.log(reverseInt('hello'));
+console.log(reverseInt(x.toString()));
+process.stdout.write(reverseInt(x.toString()));

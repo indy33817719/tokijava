@@ -4,8 +4,6 @@ const ait = rl[Symbol.asyncIterator]();
 
 let input_answer;
 let students_counts;
-// let class_counts;
-// let a;
 let sum_total = 0;
 let ave_total = 0;
 
