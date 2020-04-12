@@ -51,5 +51,4 @@ async function putValueToArray() {
     rl.close();
 }
 
-
 putValueToArray();
